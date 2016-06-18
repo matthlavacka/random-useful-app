@@ -1,0 +1,390 @@
+
+* {
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+html, body {
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+}
+
+body {
+	color: #000;
+	background: #ffffff;
+  background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #f2f2f2 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#f2f2f2));
+  background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#f2f2f2 100%);
+  background: -o-radial-gradient(center, ellipse cover, #ffffff 0%,#f2f2f2 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%,#f2f2f2 100%);
+  background: radial-gradient(ellipse at center, #ffffff 0%,#f2f2f2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=1 );
+  position: relative;
+  -webkit-text-stroke: 1px rgba(0,0,0,0.01);
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+h1, h2, h3, h4, h5 {
+  text-shadow: 2px 2px 4px #999;
+  text-align: center;
+  margin: 5px 0;
+  color: #333;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size:60px;
+	letter-spacing: 1px;
+}
+
+.subitem{
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.content-wrapper {
+  text-align: center;
+}
+
+.footer {
+	box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.15);
+	height: 40px;
+	background-color: #232323;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	color: #FFF;
+	font-size: 13px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 14px 10px;
+
+	-webkit-transition: box-shadow 450ms;
+	-moz-transition: box-shadow 450ms;
+	-ms-transition: box-shadow 450ms;
+	-o-transition: box-shadow 450ms;
+	transition: box-shadow 450ms;
+}
+
+.footer:hover {
+	box-shadow: 0px 0px 0px 4px #fee133;
+}
+
+.footer a {
+	color: greenyellow;
+}
+
+.content-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translate(0%, -50%);
+}
+
+.content-item {
+	padding: 15px 0;
+}
+
+.arrow {
+	font-size: 50px;
+  vertical-align: middle;
+  margin: auto 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.btn {
+	cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  text-decoration: none;
+  white-space: nowrap;
+  outline: 0;
+  border: none;
+  border-radius: 3px;
+  outline: none !important;
+  color: #000;
+  font-weight: 600;
+}
+
+.btn-size-xl {
+	margin: 5px;
+  font-size: 24px;
+  padding: 5px 14px;
+}
+
+.btn-secondary {
+  -webkit-transition: all 50ms;
+  transition: all 50ms;
+  background: #fee133;
+}
+
+.btn-moving {
+	box-shadow: inset 0 -4px #d0ad24;
+}
+
+.btn-moving:active, .btn-moving.active {
+	margin-top: 8px;
+  box-shadow: none;
+}
+
+.shake {
+    display: inline-block;
+    padding: 15px 40px
+}
+
+.btn-moving:hover .shake {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused
+}
+
+.social {
+	padding: 30px;
+}
+
+.social iframe:first-child{
+    height:19.5px !important;
+}
+
+.shake {
+    animation-name: shake;
+    animation-duration: 0.8s;
+    transform-origin: 50% 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -moz-animation-name: shake;
+    -moz-animation-duration: 0.8s;
+    -moz-transform-origin: 50% 50%;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -webkit-animation-name: shake;
+    -webkit-animation-duration: 0.8s;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear
+}
+
+@media screen and (max-width: 45em) {
+  h1 {
+  	font-size: 50px;
+  }
+
+	.btn-size-xl {
+	  font-size: 20px;
+	  padding: 4px 10px;
+	}
+
+	.arrow {
+		font-size: 35px;
+	  margin: auto 5px;
+	}
+	.content-item {
+		padding: 10px 0;
+	}
+	.footer {
+		font-size: 12px;
+		padding: 6px 10px;
+		line-height: 1.2;
+	}
+}
+
+@media screen and (max-height: 500px) {
+	h1 {
+  	font-size: 42px;
+  }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(2px, 1px) rotate(0deg)
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg)
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg)
+    }
+    30% {
+        transform: translate(0px, 2px) rotate(0deg)
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg)
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg)
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg)
+    }
+    70% {
+        transform: translate(2px, 1px) rotate(-1deg)
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg)
+    }
+    90% {
+        transform: translate(2px, 2px) rotate(0deg)
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg)
+    }
+}
+
+@-moz-keyframes shake {
+    0% {
+        -moz-transform: translate(2px, 1px) rotate(0deg)
+    }
+    10% {
+        -moz-transform: translate(-1px, -2px) rotate(-1deg)
+    }
+    20% {
+        -moz-transform: translate(-3px, 0px) rotate(1deg)
+    }
+    30% {
+        -moz-transform: translate(0px, 2px) rotate(0deg)
+    }
+    40% {
+        -moz-transform: translate(1px, -1px) rotate(1deg)
+    }
+    50% {
+        -moz-transform: translate(-1px, 2px) rotate(-1deg)
+    }
+    60% {
+        -moz-transform: translate(-3px, 1px) rotate(0deg)
+    }
+    70% {
+        -moz-transform: translate(2px, 1px) rotate(-1deg)
+    }
+    80% {
+        -moz-transform: translate(-1px, -1px) rotate(1deg)
+    }
+    90% {
+        -moz-transform: translate(2px, 2px) rotate(0deg)
+    }
+    100% {
+        -moz-transform: translate(1px, -2px) rotate(-1deg)
+    }
+}
+
+@-webkit-keyframes shake {
+    0% {
+        -webkit-transform: translate(2px, 1px) rotate(0deg)
+    }
+    10% {
+        -webkit-transform: translate(-1px, -2px) rotate(-1deg)
+    }
+    20% {
+        -webkit-transform: translate(-3px, 0px) rotate(1deg)
+    }
+    30% {
+        -webkit-transform: translate(0px, 2px) rotate(0deg)
+    }
+    40% {
+        -webkit-transform: translate(1px, -1px) rotate(1deg)
+    }
+    50% {
+        -webkit-transform: translate(-1px, 2px) rotate(-1deg)
+    }
+    60% {
+        -webkit-transform: translate(-3px, 1px) rotate(0deg)
+    }
+    70% {
+        -webkit-transform: translate(2px, 1px) rotate(-1deg)
+    }
+    80% {
+        -webkit-transform: translate(-1px, -1px) rotate(1deg)
+    }
+    90% {
+        -webkit-transform: translate(2px, 2px) rotate(0deg)
+    }
+    100% {
+        -webkit-transform: translate(1px, -2px) rotate(-1deg)
+    }
+}
+
+@font-face {
+    font-family:"Proxima Nova";
+    src: url('/font/proxima_nova_thin-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight:100;
+}
+@font-face {
+    font-family:"Proxima Nova";
+    src:url('/font/proxima_nova_thin_italic-webfont.woff') format('woff');
+    font-style: italic;
+    font-weight:100;
+}
+@font-face {
+    font-family:"Proxima Nova";
+    src:url('/font/proxima_nova_light-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face {
+    font-family:"Proxima Nova";
+    src:url('/font/proxima_nova_light_italic-webfont.woff') format('woff');
+    font-style: italic;
+    font-weight: 200;
+}
+@font-face {
+    font-family:"Proxima Nova";
+    src:url('/font/proxima_nova_regular-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family:"Proxima Nova";
+    src:url('/font/proxima_nova_regular_italic-webfont.woff') format('woff');
+    font-style: italic;
+    font-weight: 300;
+}
+@font-face {
+    font-family:"Proxima Nova";
+    src:url('/font/proxima_nova_semibold-webfont.woff') format('woff');
+    font-style: bold;
+    font-weight: 400;
+}
+@font-face {
+    font-family:"Proxima Nova";
+    src:url('/font/proxima_nova_bold-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family:"Proxima Nova";
+    src:url('/font/proxima_nova_bold_italic-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family:"Proxima Nova";
+    src:url('/font/proxima_nova_extrabold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family:"Proxima Nova";
+    src:url('/font/proxima_nova_black-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family:"Proxima Nova";
+    src:url('/font/proxima_nova_black_italic-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
