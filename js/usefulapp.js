@@ -78,6 +78,10 @@ function usefulAppButton( button, popup ) {
 			'https://itunes.apple.com/us/app/insta-grid-post-split-photo/id1014917264',
 			'https://itunes.apple.com/us/app/imusic-perfect-music-player/id487677479',
 			'https://itunes.apple.com/us/app/wattpad-free-books-ebook-reader/id306310789',
+			'https://itunes.apple.com/en/app/ted/id376183339',
+			'https://itunes.apple.com/us/app/khan-academy-you-can-learn/id469863705',
+			'https://itunes.apple.com/us/app/coursera-online-courses-in/id736535961',
+			'https://itunes.apple.com/us/app/udemy-online-courses-learn/id562413829',
 		],
 		android: [
 			'https://play.google.com/store/apps/details?id=net.darksky.darksky',
@@ -137,6 +141,11 @@ function usefulAppButton( button, popup ) {
 			'https://play.google.com/store/apps/details?id=wp.wattpad',
 			'https://play.google.com/store/apps/details?id=com.vsco.cam',
 			'https://play.google.com/store/apps/details?id=com.free.pandora.radio.guide',
+			'https://play.google.com/store/apps/details?id=org.coursera.android',
+			'https://play.google.com/store/apps/details?id=org.khanacademy.android',
+			'https://play.google.com/store/apps/details?id=com.udemy.android',
+			'https://play.google.com/store/apps/details?id=com.ted.android',
+
 		]
 	};
 
