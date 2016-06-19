@@ -179,6 +179,9 @@ h1 {
   h1 {
   	font-size: 50px;
   }
+  p {
+    font-size: 90%;
+  }
 
 	.btn-size-xl {
 	  font-size: 20px;
