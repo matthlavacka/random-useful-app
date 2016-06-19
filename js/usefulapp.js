@@ -1,6 +1,10 @@
-clickCounter = 0;
-
 function usefulAppButton( button, popup ) {
+
+	var count = new Firebase('https://randomusefulapp.firebaseio.com/');
+
+	count.on('value', function f(s) {
+	    $('#counting').text( numberWithCommas(0 + s.val()) );
+	});
 
 	// UI elements
 	var buttonElement = button;
@@ -118,6 +122,10 @@ function usefulAppButton( button, popup ) {
 		}
 	};
 
+	var numberWithCommas = function(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	}
+
 	// Get current device
 	var getDevice = function() {
 	  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -138,7 +146,7 @@ function usefulAppButton( button, popup ) {
 	  	var iphoneList = appList.iphone;
 
 	  	window.onload = function() {
-	  		document.getElementById( 'desktop-msg' ).innerHTML = '<p>If you want to see only apps for iPhone or apps for Android, open this website on your phone</p>';
+	  		document.getElementById( 'desktop-msg' ).innerHTML = '<p>If you want to see only apps for iPhone or apps for Android, open this website on your phone.</p>';
 	  	}
 
 	  	return iphoneList.concat(appList.android);
@@ -183,7 +191,9 @@ function usefulAppButton( button, popup ) {
 			sites = getDevice();
   	}
 
-  	clickCounter += 1;
+  	count.transaction(function(current_value) {
+	    return current_value + 1;
+	  });
 
   	storeSites();
 	};
