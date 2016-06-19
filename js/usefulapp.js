@@ -65,7 +65,7 @@ function usefulAppButton( button, popup ) {
 			'https://play.google.com/store/apps/details?id=com.citymapper.app.release',
 			'https://play.google.com/store/apps/details?id=org.videolan.vlc',
 			'https://play.google.com/store/apps/details?id=com.morecast.weather',
-			'https://play.google.com/store/apps/details?id=com.coverscreen.cover'
+			'https://play.google.com/store/apps/details?id=com.coverscreen.cover',
 			'https://play.google.com/store/apps/details?id=com.issuu.android.app',
 			'https://play.google.com/store/apps/details?id=io.tapdeck.android',
 			'https://play.google.com/store/apps/details?id=com.duolingo',
