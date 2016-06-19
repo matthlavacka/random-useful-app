@@ -18,7 +18,6 @@ function usefulAppButton( button, popup ) {
 			'https://itunes.apple.com/us/app/if-by-ifttt/id660944635',
 			'https://itunes.apple.com/us/app/ihandy-level-free/id299852753',
 			'https://itunes.apple.com/us/app/hopper-airfare-predictions/id904052407',
-			'https://itunes.apple.com/us/app/hipstamatic-camera/id342115564',
 			'https://itunes.apple.com/us/app/gif-keyboard/id917932200',
 			'https://itunes.apple.com/us/app/burner-next-generation-phone/id505800761',
 			'https://itunes.apple.com/us/app/paper-notes-photo-annotation/id506003812',
