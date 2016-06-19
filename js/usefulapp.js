@@ -179,6 +179,11 @@ function usefulAppButton( button, popup ) {
 	  {
 	  	device = 'iPhone or Android';
 	  	var iphoneList = appList.iphone;
+
+	  	window.onload = function() {
+	  		document.getElementById( 'desktop-msg' ).innerHTML = '<p>If you want to see only apps for iPhone or apps for Android, open this website on your phone</p>';
+	  	}
+
 	  	return iphoneList.concat(appList.android);
 	  }
 	}
