@@ -97,8 +97,6 @@ function usefulAppButton( button, popup ) {
 			'https://play.google.com/store/apps/details?id=com.giphy.messenger',
 			'https://play.google.com/store/apps/details?id=com.actionlauncher.playstore',
 			'https://play.google.com/store/apps/details?id=com.mindfulnesseverywhere.sleepfulness',
-			'https://play.google.com/store/apps/details?id=org.coursera.android',
-			'https://play.google.com/store/apps/details?id=com.ted.android',
 			'https://play.google.com/store/apps/details?id=com.cerminara.yazzy',
 			'https://play.google.com/store/apps/details?id=net.excelltech.android.fakeatextfree',
 		]
